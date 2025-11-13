@@ -16,3 +16,141 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 16px 0 32px 0;
+}
+
+/* Timer */
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+#datetime-picker {
+  padding: 8px 16px;
+  font-size: 18px;
+  width: 260px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+button[data-start] {
+  padding: 8px 20px;
+  font-size: 18px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+}
+
+button[disabled] {
+  background-color: #e5e5e5;
+  color: #b1b1b1;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.label {
+  margin-top: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+/*Snackbar page*/
+
+.main-title {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.snackbar-form {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 24px 20px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.snackbar-label {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.snackbar-label input[type="number"] {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  margin-top: 8px;
+  font-size: 18px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.snackbar-fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 12px 16px 10px;
+  margin-bottom: 16px;
+}
+
+.snackbar-fieldset legend {
+  padding: 0 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.snackbar-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.snackbar-btn {
+  padding: 8px 20px;
+  font-size: 18px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.snackbar-btn:hover {
+  background-color: #e9e9e9;
+}
